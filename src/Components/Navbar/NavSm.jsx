@@ -1,12 +1,14 @@
 import React from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import "./nav-styles/nav.css";
+import ActiveLink from "../../ActiveLink/ActiveLink";
 
 const NavSm = () => {
   return (
     <div>
       <nav>
-        <div className="nav-container w-full h-auto bg-white shadow-lg lg:hidden xl:hidden 2xl:hidden ">
+        <div className="nav-container w-full h-auto bg-[#00A76C] shadow-lg lg:hidden xl:hidden 2xl:hidden ">
           <div className="nav-items flex items-center gap-3">
             {/* drawer */}
             <div className="drawer  w-3/12">
@@ -17,7 +19,7 @@ const NavSm = () => {
                   htmlFor="my-drawer"
                   className="btn btn-outline border-0 drawer-button"
                 >
-                  <CiMenuBurger className="text-xl"></CiMenuBurger>
+                  <CiMenuBurger className="text-xl text-[#ECFEF4]"></CiMenuBurger>
                 </label>
               </div>
               <div className="drawer-side">
@@ -26,13 +28,13 @@ const NavSm = () => {
                   aria-label="close sidebar"
                   className="drawer-overlay"
                 ></label>
-                <ul className="drawer-items flex flex-col space-y-4 text-lg p-6 uppercase w-48 min-h-full bg-white text-black">
+                <ul className="drawer-items flex flex-col space-y-4 text-lg p-6 uppercase w-48 min-h-full bg-[#00A76C] text-black">
                   {/* Sidebar content here */}
                   <li>
-                    <Link>Home</Link>
+                    <ActiveLink to="/">Home</ActiveLink>
                   </li>
                   <li>
-                    <Link>About Me</Link>
+                    <ActiveLink to="about-me">About Me</ActiveLink>
                   </li>
                   <li>
                     <Link>Projects</Link>
@@ -44,7 +46,7 @@ const NavSm = () => {
               </div>
             </div>
             {/* logo */}
-            <div className="logo font-bold uppercase font-serif text-lg w-3/4">
+            <div className="logo font-bold uppercase font-serif text-lg w-3/4 text-[#ECFEF4]">
               Shahriar Hossain
             </div>
           </div>
