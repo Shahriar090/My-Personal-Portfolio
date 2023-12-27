@@ -1,10 +1,11 @@
 import React from "react";
 import Navlg from "../../Navbar/Navlg";
+import Banner from "../Banner/Banner";
 
 const Home = () => {
   return (
     <div>
-      <h1>this is the default home</h1>
+      <Banner></Banner>
     </div>
   );
 };

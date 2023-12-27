@@ -7,9 +7,9 @@ import ActiveLink from "../../ActiveLink/ActiveLink";
 const Navlg = () => {
   return (
     <nav>
-      <div className="nav-container w-full h-auto hidden lg:block xl:block 2xl:block bg-[#00A76C] shadow-lg px-5 py-4">
+      <div className="nav-container w-full h-auto hidden lg:block xl:block 2xl:block bg-slate-50 px-4 md:px-6 lg:px-10 py-3">
         <div className="nav-items flex items-center justify-between">
-          <div className="nav-logo text-[#ECFEF4] font-serif font-bold text-xl">
+          <div className="nav-logo text-[#05845a] font-serif font-bold text-xl">
             Shahriar Hossain
           </div>
           <div>
