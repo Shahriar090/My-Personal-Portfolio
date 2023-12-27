@@ -9,7 +9,8 @@
   background-color: #ecfef4;
 }
 
-.active {
-  background-color: #ecfef4;
-  border-radius: 8px;
+.nav-items li a.active {
+  background-color: #05845a;
+  color: #ecfef4;
+  border-radius: 20px;
 }

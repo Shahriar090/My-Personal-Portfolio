@@ -3,7 +3,7 @@ import bannerImg from "../../../../src/assets/Shahriar.jpg";
 
 const Banner = () => {
   return (
-    <div className="banner-container w-full h-auto bg-white flex flex-col-reverse lg:flex-row gap-3 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
+    <div className="banner-container w-full h-auto bg-white flex flex-col-reverse lg:flex-row gap-8 lg:gap-2 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
       <div className="texts w-full lg:w-3/6  flex flex-col gap-4 items-start justify-center">
         <span className="text-xl font-semibold uppercase font-sans">
           Hello, I am
@@ -19,7 +19,7 @@ const Banner = () => {
           Web Developer, passionate about crafting flawless websites. Let's chat
           about turning your digital dreams into a reality.
         </p>
-        <button className="btn btn-outline rounded-full bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold animate-pulse">
+        <button className="btn btn-outline rounded-full bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold animate-pulse hover:animate-none hover:bg-[#05845a]">
           Say Hello
         </button>
       </div>
