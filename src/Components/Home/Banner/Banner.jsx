@@ -5,13 +5,13 @@ const Banner = () => {
   return (
     <div className="banner-container w-full h-auto bg-white flex flex-col-reverse lg:flex-row gap-8 lg:gap-2 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
       <div className="texts w-full lg:w-3/6  flex flex-col gap-4 items-start justify-center">
-        <span className="text-xl font-semibold uppercase font-sans">
+        <span className="text-lg md:text-xl lg:text-xl font-semibold uppercase font-sans">
           Hello, I am
         </span>
-        <h1 className="text-lg md:text-xl lg:text-4xl uppercase font-serif font-bold">
+        <h1 className="text-xl md:text-3xl lg:text-4xl uppercase font-serif font-bold">
           Mohammad Shahriar Hossain
         </h1>
-        <span className="text-xl font-semibold uppercase text-[#05845a] font-sans">
+        <span className="text-lg md:text-xl lg:text-xl font-semibold uppercase text-[#05845a] font-sans">
           I am a Web Developer
         </span>
         <p className="text-lg font-sans">
