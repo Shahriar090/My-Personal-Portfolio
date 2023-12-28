@@ -15,8 +15,8 @@ const Banner = () => {
           I am a Web Developer
         </span>
         <p className="text-lg font-sans">
-          From Chittagong, Bangladesh, I am a React.js enthusiast and Front End
-          Web Developer, passionate about crafting flawless websites. Let's chat
+          From Chittagong, Bangladesh, I am a React Js and Front End Web
+          Developer with a passion for crafting flawless websites.Let's chat
           about turning your digital dreams into a reality.
         </p>
         <button className="btn btn-outline rounded-full bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold animate-pulse hover:animate-none hover:bg-[#05845a]">
