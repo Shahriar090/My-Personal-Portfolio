@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import ServiceCard from "./ServiceCard";
 import sectionImg from "../../../../src/assets/Services/my-services.avif";
-import sectionImg2 from "../../../../src/assets/Services/man-thinking-concept-illustration_114360-7920.avif";
 
 const Services = () => {
   // state
   const [services, setServices] = useState([]);
   //   use effect
   useEffect(() => {
-    fetch("/src/data/serviceData.json")
+    fetch("serviceData.json")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
@@ -20,9 +19,9 @@ const Services = () => {
       .catch((error) => console.error("Error fetching services:", error));
   }, []);
   return (
-    <div className="bg-slate-50 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
+    <div className="bg-slate-50 px-4 md:px-6 lg:px-10 py-5 md:py-6 lg:py-10">
       {/* section title and vector image */}
-      <div className="flex flex-col md:flex-row items-center lg:flex-row py-10">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:flex-row">
         <div className="sec-img w-full lg:w-2/5">
           <picture>
             <img src={sectionImg} alt="" className="rounded-full" />
@@ -40,7 +39,7 @@ const Services = () => {
       <section>
         {/* mapping single data */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-5 md:pt-8 lg:pt-10">
           {services.map((singleService) => (
             <ServiceCard
               key={singleService.id}
