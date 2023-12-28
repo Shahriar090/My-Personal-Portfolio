@@ -9,12 +9,19 @@ const Services = () => {
   const [services, setServices] = useState([]);
   //   use effect
   useEffect(() => {
-    fetch("/public/data/servicesData.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
+    fetch("/src/data/serviceData.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => setServices(data))
+      .catch((error) => console.error("Error fetching services:", error));
   }, []);
   return (
     <div className="bg-slate-50 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
+      {/* section title and vector image */}
       <div className="flex flex-col md:flex-row items-center lg:flex-row py-10">
         <div className="sec-img w-full lg:w-2/5">
           <picture>
@@ -29,7 +36,7 @@ const Services = () => {
           ></SectionTitle>
         </div>
       </div>
-
+      {/* main section */}
       <section>
         {/* mapping single data */}
 
