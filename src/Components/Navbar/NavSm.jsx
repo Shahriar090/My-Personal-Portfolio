@@ -33,13 +33,13 @@ const NavSm = () => {
                   <ActiveLink to="/">Home</ActiveLink>
                 </li>
                 <li>
-                  <ActiveLink to="about-me">About Me</ActiveLink>
+                  <ActiveLink to="/about-me">About Me</ActiveLink>
                 </li>
                 <li>
-                  <Link>Projects</Link>
+                  <ActiveLink to="/projects">Projects</ActiveLink>
                 </li>
                 <li>
-                  <Link>Say Hello</Link>
+                  <ActiveLink to="/contact">Say Hello</ActiveLink>
                 </li>
               </ul>
             </div>

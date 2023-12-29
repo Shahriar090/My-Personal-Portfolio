@@ -8,24 +8,26 @@ const SocialLinks = () => {
   return (
     <div className="icons-container flex lg:flex-col gap-5 items-center justify-center bg-[#ecfef4] rounded-full p-3">
       <li className="text-lg md:text-xl lg:text-2xl  text-black">
-        <Link>
+        <a href="https://www.facebook.com/Md.shahriarhossainsiyam">
           <CiFacebook />
-        </Link>
+        </a>
       </li>
       <li className="text-lg md:text-xl lg:text-2xl  text-black">
-        <Link>
+        <a href="https://www.linkedin.com/in/shahriar-hossain-890baa280/">
           <CiLinkedin />
-        </Link>
+        </a>
       </li>
       <li className="text-lg md:text-xl lg:text-2xl  text-black">
-        <Link>
+        <a href={`tel:${+8801825018400}`}>
+          {" "}
           <FaWhatsapp />
-        </Link>
+        </a>
       </li>
       <li className="text-lg md:text-xl lg:text-2xl  text-black">
-        <Link>
+        <a href="https://github.com/Shahriar090">
+          {" "}
           <FaGithub />
-        </Link>
+        </a>
       </li>
     </div>
   );

@@ -20,12 +20,12 @@ const Navlg = () => {
               <li>
                 <ActiveLink to="/about-me">About Me</ActiveLink>
               </li>
-              {/* <li>
-                <ActiveLink>Projects</ActiveLink>
-              </li> */}
-              {/* <li>
-                <ActiveLink>Say Hello</ActiveLink>
-              </li> */}
+              <li>
+                <ActiveLink to="/projects">Projects</ActiveLink>
+              </li>
+              <li>
+                <ActiveLink to="/contact">Say Hello</ActiveLink>
+              </li>
             </ul>
           </div>
         </div>
