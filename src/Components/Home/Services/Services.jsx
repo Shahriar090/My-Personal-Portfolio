@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import ServiceCard from "./ServiceCard";
 import sectionImg from "../../../../src/assets/Services/my-services.avif";
+import sectionImg2 from "../../../../src/assets/Services/hand-coding.avif";
 
 const Services = () => {
   // state
@@ -22,9 +23,9 @@ const Services = () => {
     <div className="bg-slate-50 px-4 md:px-6 lg:px-10 py-5 md:py-6 lg:py-10">
       {/* section title and vector image */}
       <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:flex-row">
-        <div className="sec-img w-full lg:w-2/5">
+        <div className="sec-img w-full md:w-2/4 lg:w-2/5">
           <picture>
-            <img src={sectionImg} alt="" className="rounded-full" />
+            <img src={sectionImg2} alt="" className="rounded-full" />
           </picture>
         </div>
 
