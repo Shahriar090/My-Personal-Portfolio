@@ -6,16 +6,16 @@ const Banner = () => {
   return (
     <div className="banner-container relative w-full h-auto bg-white flex flex-col-reverse lg:flex-row gap-8 lg:gap-2 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
       <div className="texts w-full lg:w-3/6  flex flex-col gap-4 lg:gap-5 items-start justify-center">
-        <span className="text-lg md:text-xl lg:text-xl font-semibold uppercase font-sans">
+        <span className="text-lg md:text-xl lg:text-xl font-semibold uppercase font-sans text-black">
           Hello, I am
         </span>
-        <h1 className="text-xl md:text-3xl lg:text-5xl uppercase font-serif font-bold tracking-wide">
+        <h1 className="text-xl md:text-3xl lg:text-5xl uppercase font-serif font-bold tracking-wide text-black">
           Mohammad Shahriar Hossain
         </h1>
         <span className="text-lg md:text-xl lg:text-xl font-semibold uppercase text-[#05845a] font-sans">
           I am a Web Developer
         </span>
-        <p className="text-lg lg:text-xl font-sans">
+        <p className="text-lg lg:text-xl font-sans text-black">
           From Chittagong, Bangladesh, I am a React Js and Front End Web
           Developer with a passion for crafting flawless websites.Let's chat
           about turning your digital dreams into a reality.
