@@ -14,7 +14,9 @@ const ServiceCard = ({ singleService }) => {
             {service}
           </h2>
         </div>
-        <p className="font-sans text-md md:text-lg lg:text-lg">{description}</p>
+        <p className="font-sans text-md md:text-lg lg:text-lg text-black">
+          {description}
+        </p>
         <div className="card-actions justify-start">
           <button className="btn btn-outline rounded-full bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold  hover:bg-[#17986d] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
             Contact Now
