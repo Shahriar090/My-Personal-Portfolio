@@ -16,7 +16,7 @@ const AboutMe = () => {
               <img
                 src={thinkingImg}
                 alt="Section-Image"
-                className="w-9/12 md:w-3/5 lg:w-3/5 mx-auto rounded-full"
+                className="w-full md:w-3/5 lg:w-3/5 mx-auto rounded-full"
               />
             </picture>
           </div>
@@ -30,13 +30,13 @@ const AboutMe = () => {
       </section>
       {/* main content */}
       <section>
-        {/* about me */}
+        {/* about me and skills*/}
         <div className="about-and-skills flex flex-col gap-10 pt-5 md:pt-8 lg:pt-12">
           <div>
-            <h1 className="font-serif font-bold uppercase text-xl md:text-2xl lg:text-3xl text-[#04724D] text-center my-10 underline">
+            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-10 underline">
               About Me
             </h1>
-            <p className="text-lg p-6 rounded-lg bg- bg-[#ECFEF4] text-[#04724D]">
+            <p className="text-xl p-6 rounded-lg bg-[#ECFEF4] text-[#04724D]">
               I am a Front-End Web Developer dedicated to crafting error-free
               websites with a focus on 100% client satisfaction. My passion for
               learning and sharing knowledge drives me to solve real-world
@@ -51,11 +51,14 @@ const AboutMe = () => {
           </div>
           {/* skills */}
           <div className="skills pt-5 md:pt-8 lg:pt-12">
+            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-10 underline">
+              Skills
+            </h1>
             <Skills></Skills>
           </div>
           {/*  education */}
           <div className="pt-5 md:pt-8 lg:pt-12">
-            <h1 className="font-serif font-bold uppercase text-xl md:text-2xl lg:text-3xl text-[#04724D] text-center my-10 underline">
+            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-10 underline">
               Education
             </h1>
             <Education></Education>

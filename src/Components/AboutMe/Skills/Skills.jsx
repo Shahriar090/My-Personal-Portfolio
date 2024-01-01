@@ -42,17 +42,14 @@ const Skills = () => {
   ];
   return (
     <div>
-      <h1 className="font-serif font-bold uppercase text-xl md:text-2xl lg:text-3xl text-[#04724D] text-center my-10 underline">
-        Skills
-      </h1>
       {/* skills bar and image */}
-      <div className="flex flex-col md:flex-row lg:flex-row items-center gap-6">
+      <div className="flex flex-col md:flex-row lg:flex-row items-center gap-5">
         <div className="skills-img w-full md:w-3/5 lg:w-3/5">
           <picture>
             <img
               src={skillImg}
               alt=""
-              className="rounded-full w-full lg:w-3/5 mx-auto"
+              className="rounded-full w-full lg:w-3/5"
             />
           </picture>
         </div>
