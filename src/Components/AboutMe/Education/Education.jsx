@@ -2,8 +2,8 @@ import React from "react";
 import eduImg from "../../../assets/Skills-&-Edu/reading-book.avif";
 const Education = () => {
   return (
-    <div className="education-container flex flex-col-reverse md:flex-row lg:flex-row items-center gap-5 ">
-      <div className="edu-details flex flex-col gap-3 w-full md:w-3/5 lg:w-3/5  p-5 rounded-lg">
+    <div className="education-container ">
+      <div className="edu-details flex flex-col gap-3 ">
         <div className="ssc text-[#04724D]">
           <h2 className="text-xl md:text-xl lg:text-2xl  font-bold font-serif">
             S.S.C
@@ -31,7 +31,7 @@ const Education = () => {
           </p>
         </div>
       </div>
-      <div className="edu-img  w-full md:w-3/5 lg:w-3/5 ">
+      {/* <div className="edu-img  w-full md:w-3/5 lg:w-3/5 ">
         <picture>
           <img
             src={eduImg}
@@ -39,7 +39,7 @@ const Education = () => {
             className="rounded-full w-full lg:w-3/5 mx-auto"
           />
         </picture>
-      </div>
+      </div> */}
     </div>
   );
 };
