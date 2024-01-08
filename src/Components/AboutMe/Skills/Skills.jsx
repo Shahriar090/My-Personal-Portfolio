@@ -43,7 +43,7 @@ const Skills = () => {
   return (
     <div>
       {/* skills bar and image */}
-      <div className="flex flex-col md:flex-row lg:flex-row items-center gap-5">
+      {/* <div className="flex flex-col md:flex-row lg:flex-row items-center gap-5">
         <div className="skills-img w-full md:w-3/5 lg:w-3/5">
           <picture>
             <img
@@ -53,9 +53,9 @@ const Skills = () => {
             />
           </picture>
         </div>
-        <div className="skills w-full md:w-3/5 lg:w-3/5">
-          <SkillBars skills={skillsData} />
-        </div>
+      </div> */}
+      <div className="skills">
+        <SkillBars skills={skillsData} />
       </div>
     </div>
   );

@@ -4,39 +4,28 @@ import thinkingImg from "../../assets/Services/man-thinking-concept-illustration
 
 import Education from "./Education/Education";
 import Skills from "./Skills/Skills";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <div className="sec-container bg-gradient-to-t from-slate-50 to-white px-4 md:px-6 lg:px-10 py-5 md:py-6 lg:py-10">
+    <div className="sec-container  py-5 md:py-6 lg:py-10">
       {/* section title and section image */}
       <section>
-        <div className=" flex flex-col-reverse md:flex-row lg:flex-row items-center pt-5 md:pt-8 lg:pt-12">
-          <div className="sec-img w-full md:w-3/6 lg:w-3/6">
-            <picture>
-              <img
-                src={thinkingImg}
-                alt="Section-Image"
-                className="w-full md:w-3/5 lg:w-3/5 mx-auto rounded-full"
-              />
-            </picture>
-          </div>
-          <div className="sec-title w-full md:w-3/6 lg:w-3/6 ">
-            <SectionTitle
-              heading={"Who am I ?"}
-              subHeading={"About Myself"}
-            ></SectionTitle>
-          </div>
-        </div>
+        <SectionTitle
+          heading={"Who am I ?"}
+          subHeading={"About Myself"}
+        ></SectionTitle>
       </section>
       {/* main content */}
       <section>
         {/* about me and skills*/}
-        <div className="about-and-skills flex flex-col gap-10 pt-5 md:pt-8 lg:pt-12">
-          <div>
-            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-10 underline">
+
+        <div className=" flex flex-col items-center  md:flex-row lg:flex-row gap-5 px-4 md:px-6 lg:px-10 ">
+          <div className="about-me w-full md:w-3/6 lg:w-3/6 shadow-md p-2 rounded-md bg-slate-50">
+            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-6">
               About Me
             </h1>
-            <p className="text-xl p-6 rounded-lg bg-[#ECFEF4] text-[#04724D]">
+            <p className="text-xl  md:text-xl lg:text-2xl  text-[#04724D] font-sans">
               I am a Front-End Web Developer dedicated to crafting error-free
               websites with a focus on 100% client satisfaction. My passion for
               learning and sharing knowledge drives me to solve real-world
@@ -46,24 +35,29 @@ const AboutMe = () => {
               find joy in working with technologies like ReactJS, JavaScript,
               and Node.js, and I'm well-versed in the MERN stack. Let's connect
               and explore how we can create remarkable digital experiences
-              together.
+              together.{" "}
+              <Link className=" animate-pulse hover:animate-none" to="/contact">
+                Contact Now
+              </Link>
             </p>
           </div>
           {/* skills */}
-          <div className="skills pt-5 md:pt-8 lg:pt-12">
-            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-10 underline">
+          <div className="skills  w-full md:w-3/6 lg:w-3/6 shadow-md p-2 rounded-md bg-slate-50">
+            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-6 ">
               Skills
             </h1>
             <Skills></Skills>
           </div>
-          {/*  education */}
-          <div className="pt-5 md:pt-8 lg:pt-12">
+        </div>
+
+        {/*  education */}
+        {/* education details are not available right now */}
+        {/* <div className="pt-5 md:pt-8 lg:pt-12">
             <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-10 underline">
               Education
             </h1>
             <Education></Education>
-          </div>
-        </div>
+          </div> */}
       </section>
     </div>
   );
