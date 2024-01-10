@@ -40,6 +40,7 @@ const AboutMe = () => {
               My Skills
             </h1>
             {/* progress */}
+
             <Progress skill="HTML" percentage={90}></Progress>
             <Progress skill="CSS" percentage={85}></Progress>
             <Progress skill="TAILWIND CSS" percentage={85}></Progress>

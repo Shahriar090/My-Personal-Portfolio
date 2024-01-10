@@ -7,15 +7,15 @@ const ServiceCard = ({ singleService }) => {
       {/* <picture>
         <img src={serviceImg} alt="Service Image" className="" />
       </picture> */}
-      <div className="card-body gap-4">
+      <div className="card-body p-5 md:p-6 lg:p-8 gap-4">
         <div className="service">
-          <h2 className="card-title text-[#ECFEF4] font-serif text-xl md:text-xl lg:text-2xl bg-[#04724D] px-2  rounded-lg">
+          <h2 className="card-title text-[#ECFEF4] font-serif text-xl md:text-xl lg:text-2xl bg-[#04724D] px-2 rounded-md">
             {service}
           </h2>
         </div>
         <p className="font-sans text-xl text-black">{description}</p>
         <div className="card-actions justify-start ">
-          <button className="btn btn-outline rounded-full bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold  hover:bg-[#17986d] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+          <button className="btn btn-outline  bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold  hover:bg-[#17986d] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
             Contact Now
           </button>
         </div>
