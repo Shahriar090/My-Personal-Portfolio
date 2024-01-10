@@ -1,57 +1,52 @@
 import React from "react";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
-import thinkingImg from "../../assets/Services/man-thinking-concept-illustration_114360-7920.avif";
-
-import Education from "./Education/Education";
-import Skills from "./Skills/Skills";
-import { Link } from "react-router-dom";
+import Progress from "./Progress/Progress";
 
 const AboutMe = () => {
   return (
-    <div className="sec-container bg-slate-50 px-4 md:px-6 lg:px-10  py-5 md:py-6 lg:py-10">
-      {/* section title and section image */}
+    <div>
       <section>
         <SectionTitle
-          heading={"Who am I ?"}
+          heading={"Who am i ?"}
           subHeading={"About Myself"}
         ></SectionTitle>
       </section>
       {/* main content */}
-      <section>
-        {/* about me and skills*/}
-        <div className="about-me  ">
-          <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-start my-6">
-            About Me
-          </h1>
-          <p className="text-xl  md:text-xl lg:text-2xl  text-[#04724D] font-sans">
-            I am a Front-End Web Developer dedicated to crafting error-free
-            websites with a focus on 100% client satisfaction. My passion for
-            learning and sharing knowledge drives me to solve real-world
-            problems with a strategic, goal-oriented mindset. I find joy in
-            working with a diverse set of technologies, including JavaScript,
-            React Js, Express Js, and Node Js. Being well-versed in the MERN
-            stack, Let's connect and explore how we can collaborate to create
-            remarkable digital experiences together.{" "}
-            <Link className=" animate-pulse hover:animate-none" to="/contact">
+      <section className="sec-container bg-white px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
+        {/* about me */}
+        <div className="parent flex flex-col md:flex-row lg:flex-row md:items-start lg:items-start gap-4 items-center">
+          <div className="about-me w-full md:w-3/6 lg:w-3/6 shadow-md space-y-4 px-3 py-3 ">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
+              About Me
+            </h1>
+            <p className="text-xl md:text-xl lg:text-2xl text-black font-sans">
+              I'm a dedicated Front-End Web Developer committed to crafting
+              error-free websites. My focus is on achieving 100% client
+              satisfaction. I find joy in working with JavaScript and React Js,
+              and I also have a basic understanding of{" "}
+              <span className="text-[#04724D]">
+                Node Js, Express Js, and MongoDB{" "}
+              </span>
+              . Let's connect and explore how we can collaborate for remarkable
+              digital experiences.
+            </p>
+            <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] mt-2">
               Contact Now
-            </Link>
-          </p>
-        </div>
-
-        <div className=" flex flex-col items-center  md:flex-row lg:flex-row-reverse gap-5 mt-5 md:mt-8 lg:mt-10">
-          {/* skills */}
-          <div className="skills  w-full md:w-3/6 lg:w-3/6 shadow-md p-2 rounded-md bg-slate-50">
-            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-6 ">
-              Skills
-            </h1>
-            <Skills></Skills>
+            </button>
           </div>
-          {/* education */}
-          <div className="w-full md:w-3/6 lg:w-3/6 shadow-md p-2 rounded-md bg-slate-50">
-            <h1 className="font-serif font-bold uppercase text-2xl md:text-3xl lg:text-4xl text-[#04724D] text-center my-6">
-              Education
+          {/* my skills */}
+          <div className="skills w-full md:w-3/6 lg:w-3/6 shadow-md space-y-4 px-3 py-3">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
+              My Skills
             </h1>
-            <Education></Education>
+            {/* progress */}
+            <Progress skill="HTML" percentage={90}></Progress>
+            <Progress skill="CSS" percentage={85}></Progress>
+            <Progress skill="TAILWIND CSS" percentage={85}></Progress>
+            <Progress skill="BOOTSTRAP" percentage={80}></Progress>
+            <Progress skill="JAVASCRIPT" percentage={80}></Progress>
+            <Progress skill="TYPESCRIPT" percentage={80}></Progress>
+            <Progress skill="REACT JS." percentage={85}></Progress>
           </div>
         </div>
       </section>

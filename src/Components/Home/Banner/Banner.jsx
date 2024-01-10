@@ -21,10 +21,10 @@ const Banner = () => {
           about turning your digital dreams into a reality.
         </p>
         <div className="buttons flex flex-col lg:flex-row gap-2 py-2">
-          <button className="btn btn-outline bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] hover:rotate-6">
+          <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] hover:rotate-6">
             Say Hello
           </button>
-          <button className="btn btn-outline bg-[#05845a] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] hover:rotate-6">
+          <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] hover:rotate-6">
             View Resume
           </button>
         </div>
