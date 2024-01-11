@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import Progress from "./Progress/Progress";
-import bannerImg from "../../../src/assets/Contact/Shahriar.jpg";
+import bannerImg from "../../../src/assets/Services/man-thinking-1.avif";
 
 const AboutMe = () => {
   return (
@@ -15,8 +15,8 @@ const AboutMe = () => {
       {/* main content */}
       <section className="sec-container bg-slate-50 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
         {/* about me */}
-        <div className="parent flex flex-col md:flex-row lg:flex-row md:items-start lg:items-start gap-4 items-center">
-          <div className="about-me w-full md:w-3/6 lg:w-3/6 space-y-4 px-3 py-3">
+        <div className="parent flex flex-col md:flex-row lg:flex-row gap-4 items-center">
+          <div className="about-me w-full md:w-3/6 lg:w-3/6 space-y-4 p-3">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
               About Me
             </h1>
@@ -41,7 +41,7 @@ const AboutMe = () => {
               <img
                 src={bannerImg}
                 alt="Image Of Shahriar"
-                className="w-full md:w-3/5 lg:w-3/5 mx-auto rounded-lg max-w-full"
+                className="w-full md:w-3/5 lg:w-3/5 mx-auto rounded-full"
               />
             </picture>
           </div>

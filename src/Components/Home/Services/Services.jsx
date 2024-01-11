@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import ServiceCard from "./ServiceCard";
-import sectionImg from "../../../../src/assets/Services/my-services.avif";
 import sectionImg2 from "../../../../src/assets/Services/hand-coding.avif";
 
 const Services = () => {
