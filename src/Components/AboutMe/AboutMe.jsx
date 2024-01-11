@@ -2,10 +2,11 @@ import React from "react";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import Progress from "./Progress/Progress";
 import bannerImg from "../../../src/assets/Services/man-thinking-1.avif";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="sec-container bg-white px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
       <section>
         <SectionTitle
           heading={"Who am i ?"}
@@ -13,14 +14,14 @@ const AboutMe = () => {
         ></SectionTitle>
       </section>
       {/* main content */}
-      <section className="sec-container bg-slate-50 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
+      <section>
         {/* about me */}
-        <div className="parent flex flex-col md:flex-row lg:flex-row gap-4 items-center">
-          <div className="about-me w-full md:w-3/6 lg:w-3/6 space-y-4 p-3">
+        <div className="parent flex flex-col-reverse md:flex-row lg:flex-row gap-4 items-center">
+          <div className="about-me w-full md:w-3/6 lg:w-3/6">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
               About Me
             </h1>
-            <p className="text-xl md:text-xl lg:text-2xl text-black font-sans">
+            <p className="text-xl md:text-xl lg:text-2xl text-black font-sans py-4">
               I'm a dedicated Front-End Web Developer committed to crafting
               error-free websites. My focus is on achieving 100% client
               satisfaction. I find joy in working with JavaScript and React Js,
@@ -31,9 +32,12 @@ const AboutMe = () => {
               . Let's connect and explore how we can collaborate for remarkable
               digital experiences.
             </p>
-            <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] mt-2">
-              Contact Now
-            </button>
+            <Link to="/contact">
+              {" "}
+              <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] mt-2">
+                Contact Now
+              </button>
+            </Link>
           </div>
 
           <div className="banner-img w-full md:w-3/6 lg:w-3/6">

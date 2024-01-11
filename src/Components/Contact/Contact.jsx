@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
-import contactImg from "../../assets/Contact/hand-shake.avif";
+import contactImg from "../../assets/Contact/talking-white-bg.png";
 const Contact = () => {
   return (
     <div>
@@ -16,18 +16,18 @@ const Contact = () => {
       </section>
       {/* main content */}
       <section className="main-content bg-white px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
-        <div className="parent-div flex flex-col md:flex-row lg:flex-row gap-5 ">
+        <div className="parent-div flex flex-col items-center md:flex-row lg:flex-row gap-5 ">
           {/* contact section image, address related topic */}
-          <div className="child-one shadow-md p-4 w-full  md:w-full lg:w-3/6 flex flex-col gap-4">
+          <div className="child-one w-full  md:w-full lg:w-3/6 flex flex-col gap-4">
             <picture>
               <img
                 src={contactImg}
                 alt="Contact Image"
-                className="w-full md:w-3/4 lg:w-3/6 rounded-full"
+                className="w-full md:w-3/4 lg:w-3/5 rounded-lg"
               />
             </picture>
 
-            <div className="texts pt-5 flex flex-col items-center md:items-start lg:items-start  gap-4  text-lg md:text-2xl lg:text-2xl text-[#04724D]">
+            <div className="texts pt-5 flex flex-col gap-4 text-xl md:text-2xl lg:text-2xl text-[#04724D]">
               <h1 className="flex gap-3 items-center ">
                 <GoPerson></GoPerson>Mohammad Shahriar Hossain
               </h1>
@@ -43,7 +43,7 @@ const Contact = () => {
               </h2>
             </div>
           </div>
-          <div className="child-two w-full   md:w-full lg:w-3/6 shadow-md p-4">
+          <div className="child-two w-full   md:w-full lg:w-3/6 ">
             {/* contact form start from here */}
             <form className="flex flex-col gap-5">
               <span className="block text-[#04724D]">Your Name *</span>

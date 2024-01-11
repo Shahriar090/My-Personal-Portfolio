@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const ServiceCard = ({ singleService }) => {
   const { id, service, description, serviceImg } = singleService;
   return (
@@ -15,9 +16,12 @@ const ServiceCard = ({ singleService }) => {
         </div>
         <p className="font-sans text-xl text-black">{description}</p>
         <div className="card-actions justify-start ">
-          <button className="btn btn-outline  bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold  hover:bg-[#17986d] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-            Contact Now
-          </button>
+          <Link to="/contact">
+            {" "}
+            <button className="btn btn-outline  bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold  hover:bg-[#17986d] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+              Contact Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
