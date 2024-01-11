@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import Progress from "./Progress/Progress";
+import bannerImg from "../../../src/assets/Contact/Shahriar.jpg";
 
 const AboutMe = () => {
   return (
@@ -12,10 +13,10 @@ const AboutMe = () => {
         ></SectionTitle>
       </section>
       {/* main content */}
-      <section className="sec-container bg-white px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
+      <section className="sec-container bg-slate-50 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10">
         {/* about me */}
         <div className="parent flex flex-col md:flex-row lg:flex-row md:items-start lg:items-start gap-4 items-center">
-          <div className="about-me w-full md:w-3/6 lg:w-3/6 shadow-md space-y-4 px-3 py-3 ">
+          <div className="about-me w-full md:w-3/6 lg:w-3/6 space-y-4 px-3 py-3">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
               About Me
             </h1>
@@ -34,13 +35,24 @@ const AboutMe = () => {
               Contact Now
             </button>
           </div>
-          {/* my skills */}
-          <div className="skills w-full md:w-3/6 lg:w-3/6 shadow-md space-y-4 px-3 py-3">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
-              My Skills
-            </h1>
-            {/* progress */}
 
+          <div className="banner-img w-full md:w-3/6 lg:w-3/6">
+            <picture>
+              <img
+                src={bannerImg}
+                alt="Image Of Shahriar"
+                className="w-full md:w-3/5 lg:w-3/5 mx-auto rounded-lg max-w-full"
+              />
+            </picture>
+          </div>
+        </div>
+        {/* my skills */}
+        <div className="skills mt-5">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#04724D] font-serif text-start">
+            My Skills
+          </h1>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-3">
             <Progress skill="HTML" percentage={90}></Progress>
             <Progress skill="CSS" percentage={85}></Progress>
             <Progress skill="TAILWIND CSS" percentage={85}></Progress>
