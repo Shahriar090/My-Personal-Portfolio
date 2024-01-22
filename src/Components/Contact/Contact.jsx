@@ -43,7 +43,7 @@ const Contact = () => {
               </h2>
             </div>
           </div>
-          <div className="child-two w-full   md:w-full lg:w-3/6 ">
+          <div className="child-two w-full  md:w-full lg:w-3/6 ">
             {/* contact form start from here */}
             <form className="flex flex-col gap-5">
               <span className="block text-[#04724D]">Your Name *</span>
