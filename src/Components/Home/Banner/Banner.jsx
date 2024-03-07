@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="banner-container relative w-full h-auto bg-white flex flex-col-reverse lg:flex-row gap-8 lg:gap-2 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-10 ">
+    <div className="banner-container relative w-full h-auto bg-white flex flex-col-reverse lg:flex-row gap-8 lg:gap-2 px-4 md:px-6 lg:px-10 py-4 md:py-6 lg:py-20">
       <div className="texts flex-1 flex flex-col gap-4 lg:gap-5 items-start justify-center">
         <span className="text-xl sm:text-2xl font-semibold uppercase font-sans text-black">
           Hello, I am
@@ -37,7 +37,7 @@ const Banner = () => {
           <img
             src={bannerImg}
             alt="Image Of Shahriar"
-            className="w-full lg:w-3/4 mx-auto rounded-lg max-w-full"
+            className="w-full lg:w-3/5 mx-auto rounded-lg max-w-full"
           />
         </picture>
       </div>
