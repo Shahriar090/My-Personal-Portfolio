@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ singleService }) => {
   const { id, service, description, serviceImg } = singleService;
   return (
-    <div className="card w-full bg-slate-50 mx-auto shadow-lg transform transition-transform hover:scale-105 ">
+    <div className="card w-full mx-auto bg-white shadow-sm">
       {/* <picture>
-        <img src={serviceImg} alt="Service Image" className="" />
+        <img
+          src={serviceImg}
+          alt="Service Image"
+          className="w-full h-[320px]"
+        />
       </picture> */}
       <div className="card-body p-5 md:p-6 lg:p-8 gap-4">
         <div className="service">
