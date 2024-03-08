@@ -1,7 +1,9 @@
 import React from "react";
 
 const Container = ({ children }) => {
-  return <div className="w-full max-w-screen-xl mx-auto px-2">{children}</div>;
+  return (
+    <div className="w-full max-w-screen-xl mx-auto px-2 pt-16">{children}</div>
+  );
 };
 
 export default Container;

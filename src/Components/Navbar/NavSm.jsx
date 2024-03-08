@@ -7,7 +7,7 @@ import ActiveLink from "../../ActiveLink/ActiveLink";
 const NavSm = () => {
   return (
     <nav className="relative">
-      <div className="nav-container w-full h-auto bg-white   fixed top-0 left-0 right-0 z-50">
+      <div className="nav-container w-full h-14 bg-white fixed top-0 left-0 right-0 z-50">
         <div className="nav-items flex items-center gap-3">
           {/* drawer */}
           <div className="drawer  w-3/12">
@@ -18,7 +18,7 @@ const NavSm = () => {
                 htmlFor="my-drawer"
                 className="btn btn-outline border-0 drawer-button"
               >
-                <CiMenuBurger className="text-2xl text-[#04724D]"></CiMenuBurger>
+                <CiMenuBurger className="text-2xl text-[#04724D] "></CiMenuBurger>
               </label>
             </div>
             <div className="drawer-side">
@@ -45,7 +45,7 @@ const NavSm = () => {
             </div>
           </div>
           {/* logo */}
-          <div className="logo font-bold uppercase font-serif text-xl w-3/4 text-[#04724D]">
+          <div className="logo font-bold uppercase font-sans text-xl w-3/4 text-[#04724D]">
             Shahriar Hossain
           </div>
         </div>

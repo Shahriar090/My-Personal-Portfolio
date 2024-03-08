@@ -20,24 +20,13 @@ const Services = () => {
       .catch((error) => console.error("Error fetching services:", error));
   }, []);
   return (
-    <Container>
-      <div className="border">
-        {/* section title and vector image */}
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:flex-row">
-          {/* <div className="sec-img w-full md:w-2/4 lg:w-2/5">
-          <picture>
-            <img src={sectionImg2} alt="" className="rounded-full" />
-          </picture>
-        </div> */}
+    <section className="bg-gray-50">
+      <Container>
+        <SectionTitle
+          heading={"What I Do?"}
+          subHeading={"My Services"}
+        ></SectionTitle>
 
-          <div className="w-full lg:w-3/5">
-            <SectionTitle
-              heading={"What I Do?"}
-              subHeading={"My Services"}
-            ></SectionTitle>
-          </div>
-        </div>
-        {/* main section */}
         <section>
           {/* mapping single data */}
 
@@ -50,8 +39,8 @@ const Services = () => {
             ))}
           </div>
         </section>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

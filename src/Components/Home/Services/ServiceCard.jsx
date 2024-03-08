@@ -4,17 +4,10 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ singleService }) => {
   const { id, service, description, serviceImg } = singleService;
   return (
-    <div className="card w-full mx-auto  shadow-xl">
-      {/* <picture>
-        <img
-          src={serviceImg}
-          alt="Service Image"
-          className="w-full h-[320px]"
-        />
-      </picture> */}
-      <div className="card-body p-5 md:p-6 lg:p-8 gap-4">
+    <div className="card w-full mx-auto  shadow-sm border hover:shadow-lg cursor-pointer">
+      <div className="card-body p-3 md:p-6 lg:p-8 gap-4">
         <div className="service">
-          <h2 className="card-title text-[#ECFEF4] font-serif text-xl md:text-xl lg:text-2xl bg-[#04724D] px-2 rounded-md">
+          <h2 className="card-title text-white font-sans text-xl  lg:text-2xl bg-[#04724D] px-2 rounded-md">
             {service}
           </h2>
         </div>
