@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
 import ServiceCard from "./ServiceCard";
 import sectionImg2 from "../../../../src/assets/Services/hand-coding.avif";
+import Container from "../../Container/Container";
 
 const Services = () => {
   // state
@@ -19,36 +20,38 @@ const Services = () => {
       .catch((error) => console.error("Error fetching services:", error));
   }, []);
   return (
-    <div className="bg-white px-4 md:px-6 lg:px-10 py-5 md:py-6 lg:py-10">
-      {/* section title and vector image */}
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:flex-row">
-        {/* <div className="sec-img w-full md:w-2/4 lg:w-2/5">
+    <Container>
+      <div className="border">
+        {/* section title and vector image */}
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:flex-row">
+          {/* <div className="sec-img w-full md:w-2/4 lg:w-2/5">
           <picture>
             <img src={sectionImg2} alt="" className="rounded-full" />
           </picture>
         </div> */}
 
-        <div className="w-full lg:w-3/5">
-          <SectionTitle
-            heading={"What I Do?"}
-            subHeading={"My Services"}
-          ></SectionTitle>
+          <div className="w-full lg:w-3/5">
+            <SectionTitle
+              heading={"What I Do?"}
+              subHeading={"My Services"}
+            ></SectionTitle>
+          </div>
         </div>
-      </div>
-      {/* main section */}
-      <section>
-        {/* mapping single data */}
+        {/* main section */}
+        <section>
+          {/* mapping single data */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 pt-5 md:pt-8 lg:pt-10">
-          {services.map((singleService) => (
-            <ServiceCard
-              key={singleService.id}
-              singleService={singleService}
-            ></ServiceCard>
-          ))}
-        </div>
-      </section>
-    </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 pt-5 md:pt-8 lg:pt-10">
+            {services.map((singleService) => (
+              <ServiceCard
+                key={singleService.id}
+                singleService={singleService}
+              ></ServiceCard>
+            ))}
+          </div>
+        </section>
+      </div>
+    </Container>
   );
 };
 

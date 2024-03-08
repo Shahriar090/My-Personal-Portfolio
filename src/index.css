@@ -5,11 +5,12 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: border-box;
   list-style: none;
 }
-
+/* body {
+  background-color: #40739e;
+} */
 html {
   scroll-behavior: smooth;
 }

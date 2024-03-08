@@ -7,7 +7,7 @@ import ActiveLink from "../../ActiveLink/ActiveLink";
 const NavSm = () => {
   return (
     <nav className="relative">
-      <div className="nav-container w-full h-auto bg-white  lg:hidden xl:hidden 2xl:hidden fixed top-0 left-0 right-0 z-50">
+      <div className="nav-container w-full h-auto bg-white   fixed top-0 left-0 right-0 z-50">
         <div className="nav-items flex items-center gap-3">
           {/* drawer */}
           <div className="drawer  w-3/12">

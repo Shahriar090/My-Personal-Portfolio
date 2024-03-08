@@ -1,16 +1,18 @@
 .nav-items li a {
   display: block;
-  color: #05845a;
+  color: #2d3436;
   padding: 10px 14px;
   border-radius: 20px;
   transition: 0.3s;
 }
 .nav-items li a:hover {
-  background-color: #ecfef4;
+  background-color: #636e72;
+  color: #dfe6e9;
 }
 
 .nav-items li a.active {
-  background-color: #04724d;
-  color: #ecfef4;
+  /* background-color: #04724d; */
+
+  color: #05845a;
   border-radius: 20px;
 }
