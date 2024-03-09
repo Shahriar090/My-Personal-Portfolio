@@ -6,9 +6,9 @@ import Container from "../../Container/Container";
 
 const Banner = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-white">
       <Container>
-        <div className="banner-container h-full sm:h-screen relative flex items-center flex-col-reverse lg:flex-row gap-8 lg:gap-2">
+        <div className="banner-container w-full h-full sm:h-screen relative flex items-center flex-col-reverse lg:flex-row gap-8 lg:gap-0">
           <div className="texts flex-1 flex flex-col gap-4 lg:gap-5 items-start justify-center">
             <span className="text-xl sm:text-2xl font-semibold uppercase font-sans text-black">
               Hello, I am
@@ -40,14 +40,14 @@ const Banner = () => {
               <img
                 src={bannerImg}
                 alt="Image Of Shahriar"
-                className="w-full lg:w-3/4 mx-auto rounded-lg max-w-full"
+                className="w-full lg:w-3/4 sm:ml-auto rounded-lg max-w-full"
               />
             </picture>
           </div>
           {/* social links */}
-          <div className="social-links-container absolute  right-1 bottom-5 lg:bottom-44">
+          {/* <div className="social-links-container absolute  right-1 bottom-5 lg:bottom-44">
             <SocialLinks></SocialLinks>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>

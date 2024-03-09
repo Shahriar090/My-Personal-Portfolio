@@ -7,11 +7,11 @@ import Container from "../Container/Container";
 
 const AboutMe = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="bg-white">
       <Container>
         <section>
           <SectionTitle
-            heading={"Who am i ?"}
+            heading={"Who Am I ?"}
             subHeading={"About Myself"}
           ></SectionTitle>
         </section>
