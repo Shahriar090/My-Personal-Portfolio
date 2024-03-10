@@ -17,9 +17,7 @@ const AboutMe = () => {
         </section>
         {/* main content */}
         <section>
-          {/* about me */}
-
-          <div className="about-me bg-gray-50 p-10">
+          <div className="about-me bg-gray-50 p-10 ">
             <p className="text-lg text-center max-w-[70ch]  text-black font-sans py-4 mx-auto">
               I'm a dedicated Front-End Web Developer committed to crafting
               error-free websites. My focus is on achieving 100% client

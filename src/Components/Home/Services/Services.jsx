@@ -28,9 +28,7 @@ const Services = () => {
         ></SectionTitle>
 
         <section>
-          {/* mapping single data */}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 pt-5 md:pt-8 lg:pt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 pb-5">
             {services.map((singleService) => (
               <ServiceCard
                 key={singleService.id}

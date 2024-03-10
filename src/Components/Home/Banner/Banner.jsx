@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <section className="bg-white">
       <Container>
-        <div className="banner-container w-full h-full sm:h-screen relative flex items-center flex-col-reverse lg:flex-row gap-8 lg:gap-0">
+        <div className="banner-container h-full sm:h-screen relative flex items-center flex-col-reverse lg:flex-row gap-8 lg:gap-0">
           <div className="texts flex-1 flex flex-col gap-4 lg:gap-5 items-start justify-center">
             <span className="text-xl sm:text-2xl font-semibold uppercase font-sans text-black">
               Hello, I am
