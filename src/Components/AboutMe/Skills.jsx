@@ -45,7 +45,7 @@ const Skills = () => {
                   Level : {skill.experience}
                 </p>
                 <p className="text-sm text-gray-700 max-w-[30ch]">
-                  Description: {skill.description}
+                  {skill.description}
                 </p>
                 {/* <img src={skill.image} alt={skill.title} /> */}
               </div>
@@ -70,7 +70,7 @@ const Skills = () => {
                   Level : {skill.experience}
                 </p>
                 <p className="text-sm text-gray-700 max-w-[30ch]">
-                  Description: {skill.description}
+                  {skill.description}
                 </p>
                 {/* <img src={skill.image} alt={skill.title} /> */}
               </div>
@@ -95,7 +95,7 @@ const Skills = () => {
                   Level : {skill.experience}
                 </p>
                 <p className="text-sm text-gray-700 max-w-[30ch]">
-                  Description: {skill.description}
+                  {skill.description}
                 </p>
                 {/* <img src={skill.image} alt={skill.title} /> */}
               </div>
