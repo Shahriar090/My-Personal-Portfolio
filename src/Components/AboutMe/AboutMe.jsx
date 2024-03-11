@@ -1,9 +1,10 @@
 import React from "react";
 import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
-import Progress from "./Progress/Progress";
+
 import bannerImg from "../../../src/assets/Services/man-thinking-1.avif";
 import { Link } from "react-router-dom";
 import Container from "../Container/Container";
+import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
@@ -45,8 +46,16 @@ const AboutMe = () => {
             </div>
           </div>
 
+          <section>
+            <div className="skills mt-6 sm:mt-20">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black font-sans text-center my-5 sm:my-12">
+                My Skills
+              </h1>
+            </div>
+          </section>
+          <Skills />
           {/* my skills */}
-          <div className="skills mt-6 sm:mt-20">
+          {/* <div className="skills mt-6 sm:mt-20">
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black font-sans text-center my-5 sm:my-12">
               My Skills
             </h1>
@@ -60,7 +69,7 @@ const AboutMe = () => {
               <Progress skill="TYPESCRIPT" percentage={80}></Progress>
               <Progress skill="REACT JS." percentage={85}></Progress>
             </div>
-          </div>
+          </div> */}
         </section>
       </Container>
     </section>

@@ -45,7 +45,7 @@ const Banner = () => {
             </picture>
           </div>
           {/* social links */}
-          <div className="social-links-container fixed z-50 right-1 bottom-5 lg:bottom-44">
+          <div className="social-links-container absolute lg:fixed right-2 bottom-5 lg:bottom-44">
             <SocialLinks></SocialLinks>
           </div>
         </div>
