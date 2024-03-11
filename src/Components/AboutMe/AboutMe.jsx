@@ -8,18 +8,18 @@ import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
-    <section className="bg-white">
+    <section className="bg-gray-200">
       <Container>
         <section>
           <SectionTitle
             heading={"Who Am I ?"}
-            subHeading={"About Myself"}
+            subHeading={"Skills & About"}
           ></SectionTitle>
         </section>
         {/* main content */}
         <section>
-          <div className="about-me bg-gray-50 p-10 ">
-            <p className="text-lg text-center max-w-[70ch]  text-black font-sans py-4 mx-auto">
+          <div className="about-me">
+            <p className="text-lg lg:text-xl italic text-center max-w-[60ch]  text-black font-sans pb-10 mx-auto">
               I'm a dedicated Front-End Web Developer committed to crafting
               error-free websites. My focus is on achieving 100% client
               satisfaction. I find joy in working with JavaScript and React Js,
@@ -47,11 +47,7 @@ const AboutMe = () => {
           </div>
 
           <section>
-            <div className="skills mt-6 sm:mt-20">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black font-sans text-center my-5 sm:my-12">
-                My Skills
-              </h1>
-            </div>
+            <div className="skills my-10 sm:my-24"></div>
           </section>
           <Skills />
           {/* my skills */}

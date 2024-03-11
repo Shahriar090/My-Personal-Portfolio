@@ -7,11 +7,11 @@ const ServiceCard = ({ singleService }) => {
     <div className="card w-full mx-auto  shadow-sm hover:shadow-lg transition-all duration-500 cursor-pointer bg-white">
       <div className="card-body p-3 md:p-6 lg:p-8 gap-4">
         <div className="service">
-          <h2 className="card-title text-white font-sans text-xl  lg:text-2xl bg-[#04724D] px-2 rounded-md">
+          <h2 className="card-title text-white font-sans text-xl  lg:text-2xl bg-[#04724D] px-2 py-2 rounded-md">
             {service}
           </h2>
         </div>
-        <p className="font-sans text-xl text-black">{description}</p>
+        <p className="font-sans text-lg lg:text-xl text-black">{description}</p>
         <div className="card-actions justify-start ">
           <Link to="/contact">
             {" "}

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Container from "../Container/Container";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
@@ -11,7 +10,7 @@ const Skills = () => {
       fetch("skillsData.json")
         .then((res) => res.json())
         .then((data) => {
-          setSkills(data), console.log(data);
+          setSkills(data);
         });
     } catch (error) {
       throw new Error("Failed To Load Data");
@@ -27,30 +26,83 @@ const Skills = () => {
   }, [skills]);
 
   return (
-    <div>
-      <Container>
-        <div className="skills-container">
-          <h1 className="text-start text-4xl font-bold font-sans text-black">
+    <div className="bg-gray-100 p-8">
+      <div className="skills-container">
+        <div className="front-end">
+          <h1 className="text-center text-3xl font-bold font-sans text-black my-8 sm:my-16">
             Front End
           </h1>
-          <div className="front-end grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
             {frontEndSkills.map((skill) => (
-              <div key={skill.id} className="shadow-md p-5 rounded-md">
+              <div
+                key={skill.id}
+                className="shadow-md p-5 rounded-md cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
+              >
                 <h1 className="text-2xl font-sans font-bold text-black">
                   {skill.title}
                 </h1>
-                <p className="text-lg font-semibold font-sans text-gray-700">
-                  Level: {skill.experience}
+                <p className="text-lg font-semibold font-sans text-gray-800">
+                  Level : {skill.experience}
                 </p>
-                <p className="text-sm text-gray-600 max-w-[30ch]">
+                <p className="text-sm text-gray-700 max-w-[30ch]">
                   Description: {skill.description}
                 </p>
-                <img src={skill.image} alt={skill.title} />
+                {/* <img src={skill.image} alt={skill.title} /> */}
               </div>
             ))}
           </div>
         </div>
-      </Container>
+        {/* back end */}
+        <div className="back-end mt-8 sm:mt-16">
+          <h1 className="text-center text-3xl font-bold font-sans text-black my-8 sm:my-16">
+            Back End
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+            {backEndSkills.map((skill) => (
+              <div
+                key={skill.id}
+                className="shadow-md p-5 rounded-md cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
+              >
+                <h1 className="text-2xl font-sans font-bold text-black">
+                  {skill.title}
+                </h1>
+                <p className="text-lg font-semibold font-sans text-gray-800">
+                  Level : {skill.experience}
+                </p>
+                <p className="text-sm text-gray-700 max-w-[30ch]">
+                  Description: {skill.description}
+                </p>
+                {/* <img src={skill.image} alt={skill.title} /> */}
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* version control */}
+        <div className="back-end">
+          <h1 className="text-center text-3xl font-bold font-sans text-black my-8 sm:my-16">
+            Version Control
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
+            {versionControlSkills.map((skill) => (
+              <div
+                key={skill.id}
+                className="shadow-md p-5 rounded-md cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
+              >
+                <h1 className="text-2xl font-sans font-bold text-black">
+                  {skill.title}
+                </h1>
+                <p className="text-lg font-semibold font-sans text-gray-800">
+                  Level : {skill.experience}
+                </p>
+                <p className="text-sm text-gray-700 max-w-[30ch]">
+                  Description: {skill.description}
+                </p>
+                {/* <img src={skill.image} alt={skill.title} /> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       <div></div>
     </div>
