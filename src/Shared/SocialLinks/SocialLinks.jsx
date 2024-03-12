@@ -6,7 +6,7 @@ import "./social-icons.css";
 
 const SocialLinks = () => {
   return (
-    <div className="icons-container flex md:flex-col gap-4 items-center justify-center ">
+    <div className="icons-container flex lg:flex-col gap-4 items-center justify-center ">
       <li className="text-2xl text-black ">
         <a href="https://www.facebook.com/Md.shahriarhossainsiyam">
           <CiFacebook />
