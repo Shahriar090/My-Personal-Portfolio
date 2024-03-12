@@ -6,7 +6,7 @@ import Skills from "./Skills";
 
 const AboutMe = () => {
   return (
-    <section className="bg-gray-200">
+    <section className="bg-gray-100">
       <Container>
         <section>
           <SectionTitle
