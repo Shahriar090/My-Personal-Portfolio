@@ -45,7 +45,7 @@ const NavSm = () => {
             </div>
           </div>
           {/* logo */}
-          <div className="logo font-bold uppercase font-sans text-xl w-3/4 text-[#04724D]">
+          <div className="logo font-bold uppercase text-xl w-3/4 text-[#04724D]">
             Shahriar Hossain
           </div>
         </div>

@@ -10,27 +10,27 @@ const Banner = () => {
       <Container>
         <div className="banner-container h-full sm:h-screen  flex items-center flex-col-reverse lg:flex-row gap-8 lg:gap-0">
           <div className="texts flex-1 flex flex-col gap-4 lg:gap-5 items-start justify-center">
-            <span className="text-xl sm:text-2xl font-semibold uppercase font-sans text-black">
+            <span className="text-xl sm:text-2xl font-medium uppercase text-gray-800">
               Hello, I am
             </span>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl uppercase font-sans font-bold tracking-wide text-black">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl uppercase font-bold tracking-wide text-black">
               Mohammad Shahriar Hossain
             </h1>
-            <span className="text-xl sm:text-2xl font-semibold uppercase text-[#05845a] font-sans">
+            <span className="text-xl sm:text-2xl font-medium uppercase text-[#05845a]">
               I am a Web Developer
             </span>
-            <p className="text-lg sm:text-xl font-sans text-black">
+            <p className="text-lg sm:text-xl  text-gray-800">
               From Chittagong, Bangladesh, I am a React Js and Front End Web
               Developer with a passion for crafting flawless websites.Let's chat
               about turning your digital dreams into a reality.
             </p>
             <div className="buttons flex flex-col lg:flex-row gap-2 py-2">
               <Link to="/contact">
-                <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] hover:rotate-6">
+                <button className="btn btn-outline bg-[#04724D] text-white border-0  font-semibold hover:bg-[#05845a] hover:rotate-6">
                   Say Hello
                 </button>
               </Link>
-              <button className="btn btn-outline bg-[#04724D] text-[#ecfef4] border-0 font-sans font-semibold hover:bg-[#05845a] hover:rotate-6">
+              <button className="btn btn-outline bg-[#04724D] text-white border-0  font-semibold hover:bg-[#05845a] hover:rotate-6">
                 View Resume
               </button>
             </div>

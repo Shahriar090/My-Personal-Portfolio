@@ -3,9 +3,7 @@ import React from "react";
 const SectionTitle = ({ heading, subHeading }) => {
   return (
     <div className="py-8 md:py-12 lg:py-16 text-center">
-      <h1 className="text-3xl sm:text-4xl font-sans font-bold text-black">
-        {heading}
-      </h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-black">{heading}</h1>
       <p className="text-lg sm:text-xl font-semibold text-gray-800">
         {subHeading}
       </p>

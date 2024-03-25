@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <section className="bg-gray-50">
       <Container>
-        <footer className="footer items-center justify-center p-4   text-neutral-content rounded-full">
+        <footer className="footer items-center justify-center p-4">
           <aside>
-            <p className="text-[#04724D] capitalize">
+            <p className="text-gray-800 capitalize">
               Copyright © {currentYear} - All rights reserved by Mohammad
               Shahriar Hossain
             </p>
