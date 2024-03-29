@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "projectTitle": "Urban Eats",
+    "projectImg": "https://i.ibb.co/kMFj56T/urban-eats.png",
+    "projectDescription": "This is a simple restaurant website.I mainly focused on the front-end part as i am a front-end developer right now.I am continuously working on this project to implement the best features as i can implement.My main goal of this project to make a full stack application using MERN stack and making reusable component to use multiple time in the whole website",
+    "usedTools": [
+      "React JS",
+      "Tailwind CSS",
+      "Daisy UI",
+      "React Router DOM",
+      "React Icons"
+    ],
+    "startDate": "Feb 10, 2024",
+    "endDate": "Will Be Updated",
+    "githubLink": "https://github.com/Shahriar090/Urban-Eats",
+    "liveDemo": "https://urban-eats-restaurent.netlify.app"
+  },
+  {
+    "id": 2,
+    "projectTitle": "Top Toolz",
+    "projectImg": "https://i.ibb.co/CVyQ1KZ/top-toolz.png",
+    "projectDescription": "This is a tools related simple landing page.I mainly focused on the front-end part as i am a front-end developer right now.I am continuously working on this project to implement the best features as i can implement.My main goal of this project to make a full stack application using MERN stack and making reusable component to use multiple time in the whole website",
+    "usedTools": ["React JS", "Tailwind CSS", "React Icons"],
+    "startDate": "Mar 22, 2024",
+    "endDate": "Will Be Updated",
+    "githubLink": "https://github.com/Shahriar090/top-toolz",
+    "liveDemo": "https://top-toolz.netlify.app"
+  },
+  {
+    "id": 3,
+    "projectTitle": "My Portfolio",
+    "projectImg": "https://i.ibb.co/NmkxK63/my-portfolio-img.png",
+    "projectDescription": "This is my personal portfolio website.I am creating this website mainly to showcase my works and trying to implement best practices like reusable component, Write clean code etc. .I mainly focused on the front-end part as i am a front-end developer right now.I am continuously working on this project to implement the best features as i can implement.My main goal of this project to make a full stack application using MERN stack.",
+    "usedTools": [
+      "React JS",
+      "Tailwind CSS",
+      "Daisy UI",
+      "React Icons",
+      "React Router DOM"
+    ],
+    "startDate": "Mar 22, 2024",
+    "endDate": "Will Be Updated",
+    "githubLink": "https://github.com/Shahriar090/My-Personal-Portfolio",
+    "liveDemo": "https://shahriar-hossain.netlify.app"
+  }
+]
