@@ -26,9 +26,9 @@ const Projects = () => {
     fetchData();
   }, []);
   return (
-    <section>
+    <section className="bg-white">
       <Container>
-        <section className="">
+        <section>
           <SectionTitle
             heading={"Portfolio"}
             subHeading={"My Recent Works"}
@@ -39,7 +39,7 @@ const Projects = () => {
           {loading ? (
             <p>Loading....</p>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2  gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {projects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}

@@ -17,10 +17,14 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-full p-2 sm:p-5 flex flex-col rounded-md shadow-xl cursor-pointer bg-gray-50">
+    <div className="w-full p-2 sm:p-5 flex flex-col rounded-md shadow-xl cursor-pointer bg-gray-100 ">
       <div className="img">
         <picture>
-          <img src={projectImg} alt="Project Image" className="rounded-md" />
+          <img
+            src={projectImg}
+            alt="Project Image"
+            className="rounded-md w-full"
+          />
         </picture>
       </div>
       <div className="details mt-10">
@@ -35,15 +39,17 @@ const ProjectCard = ({ project }) => {
         {projectDescription.length > 60 && (
           <button
             onClick={toggleDescription}
-            className="text-lg  text-gray-900 underline underline-offset-2"
+            className="text-sm  text-gray-900 font-semibold"
           >
             {showFullDescription ? "See Less" : "See More"}
           </button>
         )}
         <div className="tools h-[160px] pt-5">
-          <span className="font-semibold uppercase text-lg">Used Tools</span>
+          <span className="font-semibold uppercase text-[20px] text-black">
+            Used Tools
+          </span>
           {usedTools.map((item, index) => (
-            <li className="list-disc text-black  text-sm" key={index}>
+            <li className=" text-black  text-[15px]" key={index}>
               {item}
             </li>
           ))}
