@@ -39,7 +39,7 @@ const Skills = () => {
                 className="bg-white shadow-sm p-4 rounded-sm cursor-pointer hover:ring-2 ring-green-700 hover:shadow-green-500 transition-all duration-500"
               >
                 <div className="space-y-1">
-                  <h1 className="text-2xl  font-bold text-black">
+                  <h1 className="card-title text-white text-lg bg-[#04724D] p-2 rounded-md">
                     {skill.title}
                   </h1>
                   <p className="text-lg font-semibold text-gray-800">
@@ -63,7 +63,7 @@ const Skills = () => {
                 key={skill.id}
                 className="bg-white shadow-sm p-5 rounded-sm cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
               >
-                <h1 className="text-2xl  font-bold text-black">
+                <h1 className="card-title text-white text-lg bg-[#04724D] p-2 rounded-md">
                   {skill.title}
                 </h1>
                 <p className="text-lg font-semibold  text-gray-800">
@@ -88,7 +88,9 @@ const Skills = () => {
                 key={skill.id}
                 className="bg-white shadow-sm p-5 rounded-sm cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
               >
-                <h1 className="text-2xl font-bold text-black">{skill.title}</h1>
+                <h1 className="card-title text-white text-lg bg-[#04724D] p-2 rounded-md">
+                  {skill.title}
+                </h1>
                 <p className="text-lg font-semibold  text-gray-800">
                   Level : {skill.experience}
                 </p>
