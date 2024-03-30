@@ -3,6 +3,7 @@ import bannerImg from "../../../../src/assets/Shahriar.jpg";
 import SocialLinks from "../../../Shared/SocialLinks/SocialLinks";
 import { Link } from "react-router-dom";
 import Container from "../../Container/Container";
+import Button from "../../../ui/Button";
 
 const Banner = () => {
   return (
@@ -26,13 +27,10 @@ const Banner = () => {
             </p>
             <div className="buttons flex flex-col lg:flex-row gap-2 py-2">
               <Link to="/contact">
-                <button className="btn btn-outline bg-[#04724D] text-white border-0  font-semibold hover:bg-[#05845a] hover:rotate-6">
-                  Say Hello
-                </button>
+                {/* reusable button */}
+                <Button>Say Hello</Button>
               </Link>
-              <button className="btn btn-outline bg-[#04724D] text-white border-0  font-semibold hover:bg-[#05845a] hover:rotate-6">
-                View Resume
-              </button>
+              <Button variant="outline">View Resume</Button>
             </div>
           </div>
           <div className="banner-img flex-1">

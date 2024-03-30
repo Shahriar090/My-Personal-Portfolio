@@ -3,6 +3,7 @@ import SectionTitle from "../../Shared/SectionTitle/SectionTitle";
 import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import Skills from "./Skills";
+import Button from "../../ui/Button";
 
 const AboutMe = () => {
   return (
@@ -32,15 +33,11 @@ const AboutMe = () => {
             <div className="text-center space-x-2">
               <Link to="/contact">
                 {" "}
-                <button className="btn btn-outline bg-[#04724D] text-white border-0 font-sans font-semibold hover:bg-[#05845a] mt-2">
-                  Contact Now
-                </button>
+                <Button>Contact Now</Button>
               </Link>
               <Link to="/projects">
                 {" "}
-                <button className="btn btn-outline bg-[#04724D] text-white border-0 font-sans font-semibold hover:bg-[#05845a] mt-2">
-                  See Projects
-                </button>
+                <Button variant="outline">See Projects</Button>
               </Link>
             </div>
           </div>
