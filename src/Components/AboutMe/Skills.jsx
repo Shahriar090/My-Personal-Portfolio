@@ -36,7 +36,7 @@ const Skills = () => {
             {frontEndSkills.map((skill) => (
               <div
                 key={skill.id}
-                className="bg-gray-100 shadow-sm p-4 rounded-sm cursor-pointer hover:ring-2 ring-green-700 hover:shadow-green-500 transition-all duration-500"
+                className="bg-white shadow-sm p-4 rounded-sm cursor-pointer hover:ring-2 ring-green-700 hover:shadow-green-500 transition-all duration-500"
               >
                 <div className="space-y-1">
                   <h1 className="text-2xl  font-bold text-black">
@@ -45,9 +45,7 @@ const Skills = () => {
                   <p className="text-lg font-semibold text-gray-800">
                     Level : {skill.experience}
                   </p>
-                  <p className="text-sm text-gray-800 sm:max-w-[30ch]">
-                    {skill.description}
-                  </p>
+                  <p className="text-sm text-gray-800">{skill.description}</p>
                 </div>
                 {/* <img src={skill.image} alt={skill.title} /> */}
               </div>
@@ -63,7 +61,7 @@ const Skills = () => {
             {backEndSkills.map((skill) => (
               <div
                 key={skill.id}
-                className="bg-gray-100 shadow-sm p-5 rounded-sm cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
+                className="bg-white shadow-sm p-5 rounded-sm cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
               >
                 <h1 className="text-2xl  font-bold text-black">
                   {skill.title}
@@ -88,7 +86,7 @@ const Skills = () => {
             {versionControlSkills.map((skill) => (
               <div
                 key={skill.id}
-                className="bg-gray-100 shadow-sm p-5 rounded-sm cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
+                className="bg-white shadow-sm p-5 rounded-sm cursor-pointer hover:ring-1 ring-green-700 hover:shadow-green-500 transition-all duration-500"
               >
                 <h1 className="text-2xl font-bold text-black">{skill.title}</h1>
                 <p className="text-lg font-semibold  text-gray-800">
