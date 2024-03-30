@@ -6,9 +6,9 @@ const ServiceCard = ({ singleService }) => {
   const { id, service, description, serviceImg } = singleService;
   return (
     <div className="card w-full shadow-xl  transition-all duration-500 cursor-pointer bg-white">
-      <div className="card-body p-5  lg:p-8 gap-5">
+      <div className="card-body p-3 lg:p-8 gap-5">
         <div className="service">
-          <h2 className="card-title text-white text-xl bg-[#04724D] px-2 py-2 rounded-sm uppercase">
+          <h2 className="card-title text-white text-lg bg-[#04724D] p-2 rounded-md uppercase">
             {service}
           </h2>
         </div>

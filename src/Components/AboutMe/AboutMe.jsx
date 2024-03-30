@@ -18,7 +18,7 @@ const AboutMe = () => {
         {/* main content */}
         <section>
           <div className="about-me mb-12">
-            <p className="text-lg lg:text-xl sm:text-center sm:max-w-[80ch]  text-gray-800 pb-10 mx-auto font-medium">
+            <p className="text-lg lg:text-xl text-center sm:max-w-[80ch]  text-gray-800 pb-10 mx-auto font-medium">
               I'm a dedicated Front-End Web Developer committed to crafting
               error-free websites. My focus is on achieving 100% client
               satisfaction. I find joy in working with JavaScript and React Js,

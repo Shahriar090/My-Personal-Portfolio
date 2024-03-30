@@ -19,13 +19,13 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-3 inline-flex items-center justify-center;
+    @apply px-6 py-2 sm:px-8 sm:py-3 inline-flex items-center justify-center;
     @apply bg-[#04724D] text-white border-0 rounded-md;
     @apply font-semibold hover:bg-[#05845a];
     @apply transition-all duration-500;
   }
   .btn-outline {
-    @apply px-8 py-3 inline-flex items-center justify-center;
+    @apply px-6 py-2 sm:px-8 sm:py-3 inline-flex items-center justify-center;
     @apply text-[#04724D] font-semibold rounded-md;
     @apply border border-[#04724D] hover:bg-[#04724D] hover:text-white;
     @apply transition-all duration-500;
