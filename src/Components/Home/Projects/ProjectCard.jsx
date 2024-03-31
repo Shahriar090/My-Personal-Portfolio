@@ -17,18 +17,18 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div className="w-full p-2 sm:p-5 flex flex-col rounded-md shadow-xl cursor-pointer bg-gray-100 ">
-      <div className="img">
+    <div className="w-full p-2 sm:p-4 flex flex-col rounded-md shadow-xl cursor-pointer bg-white">
+      <div className="img overflow-hidden">
         <picture>
           <img
             src={projectImg}
             alt="Project Image"
-            className="rounded-md w-full"
+            className="rounded-md w-full hover:scale-110 transition-all duration-500"
           />
         </picture>
       </div>
       <div className="details mt-10">
-        <h1 className="font-semibold text-2xl text-black uppercase">
+        <h1 className="title text-white text-lg  bg-[#04724D] p-2 rounded-md">
           {projectTitle}
         </h1>
         <p className="text-gray-800 pt-3">
@@ -45,9 +45,7 @@ const ProjectCard = ({ project }) => {
           </button>
         )}
         <div className="tools h-[160px] pt-5">
-          <span className="font-semibold uppercase text-[20px] text-black">
-            Used Tools
-          </span>
+          <span className="font-medium text-[20px] text-black">Used Tools</span>
           {usedTools.map((item, index) => (
             <li className=" text-black  text-[15px]" key={index}>
               {item}
@@ -60,10 +58,18 @@ const ProjectCard = ({ project }) => {
           <p>End Date : {endDate}</p>
         </div> */}
         <div className="buttons flex justify-between pt-5">
-          <a className="btn btn-xs" href={githubLink} target="_blank">
+          <a
+            className="btn btn-xs bg-[#04724D] text-white hover:bg-green-800"
+            href={githubLink}
+            target="_blank"
+          >
             GitHub
           </a>
-          <a className="btn btn-xs" href={liveDemo} target="_blank">
+          <a
+            className="btn btn-xs bg-[#04724D] text-white hover:bg-green-800"
+            href={liveDemo}
+            target="_blank"
+          >
             Live Demo
           </a>
         </div>

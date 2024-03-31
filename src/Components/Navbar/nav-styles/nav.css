@@ -6,8 +6,7 @@
   transition: 0.3s;
 }
 .nav-items li a:hover {
-  background-color: gainsboro;
-  color: black;
+  color: #05845a;
 }
 
 .nav-items li a.active {

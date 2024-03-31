@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Container from "../../Container/Container";
 import SectionTitle from "../../../Shared/SectionTitle/SectionTitle";
-import ProjectCard from "./projectCard";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -26,7 +26,7 @@ const Projects = () => {
     fetchData();
   }, []);
   return (
-    <section className="bg-white">
+    <section className="bg-gray-50">
       <Container>
         <section>
           <SectionTitle
