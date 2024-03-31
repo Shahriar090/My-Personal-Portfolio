@@ -37,7 +37,10 @@ const Projects = () => {
         {/* main section */}
         <section>
           {loading ? (
-            <p>Loading....</p>
+            <div className="flex items-center justify-center">
+              {" "}
+              <p>Loading....</p>
+            </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {projects.map((project) => (
